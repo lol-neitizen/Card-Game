@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Lose</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Styles to match your main game page */
+        body {
+            background-color: #F9FBE7;
+            color: #FFD700;
+            font-family: 'Press Start 2P', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            text-shadow: 4px 4px 0 #FF4500;
+            margin-bottom: 20px;
+        }
+        .animation {
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #0D0D1A;
+            background-color: #F8BBD0;
+            
+            border: 4px solid #FF4500;
+            cursor: pointer;
+            box-shadow: 4px 4px 0 #FF4500;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .button:hover {
+            transform: translateY(-4px) translateX(-4px);
+            box-shadow: 8px 8px 0 #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOU LOSE</h1>
+    <p>Better luck next time!</p>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmcwcjBnejhlZG1icXM4YXhtdWRvY282eGs5ZmZrNDQ3azRoNWx5NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CvbzcnrrCDc1KfYo4c/giphy.gif" alt="Sad pixel art animation" class="animation">
+    <a href="index.html" class="button">TRY AGAIN</a>
+</body>
+</html>

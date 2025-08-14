@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <!-- We're embedding the CSS directly to ensure it works without a separate file. -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+     /* Global Styles */
+body {
+    background-color: #F9FBE7; /* Strawberry Swirl - Off-White/Cream */
+    color: #d13519; /* Strawberry Swirl - Dark Chocolate Brown */
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & Navbar */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8BBD0; /* Strawberry Swirl - Soft Strawberry Pink */
+    padding: 15px 20px;
+    border-bottom: 4px solid #E57373; /* Strawberry Swirl - Cherry Red */
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 0 #E57373; /* Strawberry Swirl - Cherry Red */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li {
+    border: 2px solid #E57373; /* Strawberry Swirl - Cherry Red */
+    padding: 5px 10px;
+    background-color: #F9FBE7; /* Strawberry Swirl - Off-White/Cream */
+    transition: all 0.2s ease;
+}
+
+nav ul li:hover {
+    background-color: #E57373; /* Strawberry Swirl - Cherry Red */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E57373; /* Strawberry Swirl - Cherry Red */
+    transition: color 0.2s ease;
+}
+
+nav ul li:hover a {
+    color: #F9FBE7; /* Strawberry Swirl - Off-White/Cream */
+}
+
+/* Main Content & Cards */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    width: 30vw;
+    max-width: 350px;
+    height: calc(30vw * 1.4);
+    max-height: 490px;
+    background-color: #F8BBD0; /* Strawberry Swirl - Soft Strawberry Pink */
+    border: 4px solid #E57373; /* Strawberry Swirl - Cherry Red */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 0px #E57373; /* Strawberry Swirl - Cherry Red */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 8px 0px #E57373; /* Strawberry Swirl - Cherry Red */
+    border-color: #E57373; /* Strawberry Swirl - Cherry Red */
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border-bottom: 4px solid #E57373; /* Strawberry Swirl - Cherry Red */
+}
+
+.card-content {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 0 #3E2723; /* Strawberry Swirl - Dark Chocolate Brown */
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 80vw;
+        height: calc(80vw * 1.4);
+        max-width: none;
+        max-height: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Whom do you choose?</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Hint</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="projects">
+        <div class="container">
+            <!-- Card 1 -->
+            <a id="card1" href="#" class="card-link">
+                <div class="card">
+                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajBhZm8yajkzdGhkNnEzNHhseTkydWl2dXRkaDE4ZHpkbnVwbDl2dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hnmOKl3oUd5U4/giphy.gif" alt="Card 1">
+                    <div class="card-content">
+                        <h2>HUNGRY MOUSE</h2>
+                    </div>
+                </div>
+            </a>
+            <!-- Card 2 -->
+            <a id="card2" href="#" class="card-link">
+                <div class="card">
+                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjQyaDZibmNjajI0ZTJ1aWRoNWg1cnhmcmV6ZGlka2M4aHNidGpzeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YPJ5ew1ss91MpktBrT/giphy.gif" alt="Card 2">
+                    <div class="card-content">
+                        <h2>SLEEPY CAT</h2>
+                    </div>
+                </div>
+            </a>
+            <!-- Card 3 -->
+            <a id="card3" href="#" class="card-link">
+                <div class="card">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFtYWswZndtcnBkNDZuZHJkZjM1YzZuMHFtczB2NG9yY3RrNmQ1MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QsKdQidXLVqPS/giphy.gif" alt="Card 3">
+                    <div class="card-content">
+                        <h2>FRIENDLY CROC</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Define the possible outcomes. One win, two lose.
+        const links = [
+            "./youwin.html",
+            "./youlose.html",
+            "./youlose.html"
+        ];
+
+        // A function to shuffle the array using the Fisher-Yates algorithm.
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Shuffle the links array
+        shuffleArray(links);
+
+        // Get the card elements by their IDs
+        const card1 = document.getElementById('card1');
+        const card2 = document.getElementById('card2');
+        const card3 = document.getElementById('card3');
+
+        // Store the shuffled links in a data attribute
+        card1.dataset.link = links[0];
+        card2.dataset.link = links[1];
+        card3.dataset.link = links[2];
+
+        // Add event listeners to each card
+        card1.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevents the default anchor tag behavior
+            window.location.href = card1.dataset.link;
+        });
+
+        card2.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.href = card2.dataset.link;
+        });
+
+        card3.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.href = card3.dataset.link;
+        });
+    });
+</script>
